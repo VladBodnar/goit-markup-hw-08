@@ -1,0 +1,9 @@
+header {
+  background-color: var(--header-bg-cl);
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
