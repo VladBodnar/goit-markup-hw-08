@@ -24,11 +24,11 @@ flex-wrap: wrap;
 
 
 
-// @include mg(tablet) {    
-//     flex-wrap: wrap;
-//     flex-wrap: wrap;
-
-//   }
+@include mg(tablet) {    
+    flex-wrap: wrap;
+   
+  }
+  
 @include mg(desktop) {
     display: flex;
   }
