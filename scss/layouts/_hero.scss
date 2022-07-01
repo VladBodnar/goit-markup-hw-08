@@ -1,31 +1,72 @@
 .hero-group {
   max-width: 1600px;
+  height: 400px;
+  @include mg(retina) {
+        height: 800px;
+  }
+   @include mg(tablet) {
+       height: 400px;
+    
+        @include mg(retina) {            
+            height: 1600px;
+          }
+  }
+    @include mg(desktop) {
+         height: 600px;
+      
+           @include mg(retina) {
+               height: 800px;
+            }
+    }
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/fon/fon.jpg);
+ 
+
+  background-image: url(../images/fon/img-1_sm.jpg),
+   linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+  @include mg(retina) {
+    background-image: url(../images/fon/img-1_sm@2x.jpg),
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)); 
+   }
+  
+   @include mg(tablet) {
+    background-image: url(../images/fon/img-1_md.jpg),
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    
+      @include mg(retina) {
+        background-image: url(../images/fon/img-1_md@2x.jpg),
+          linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+      }
+   }
+
+        @include mg(desktop) {
+          background-image: url(../images/fon/img-1_lg.jpg),
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    
+          @include mg(retina) {
+            background-image: url(../images/fon/img-1_lg@2x.jpg),
+              linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+          }
+        }
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.hero__title {
-  width: 696px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
+// .hero__title {
+//   // width: 696px;
+//   margin-bottom: 30px;
+//   margin-right: auto;
+//   margin-left: auto;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--secondary-txt-cl);
-}
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: var(--secondary-txt-cl);
+// }
