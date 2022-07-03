@@ -1,5 +1,9 @@
 .contakts {
-  display: flex;
+  display: none;    
+  
+    @include mg(desktop) {
+      display: flex;
+    }
   align-items: center;
   justify-content: center;
   margin-left: auto;
@@ -33,8 +37,8 @@
   fill: currentColor;
 }
 
-.contacts {
-  margin-right: 70px;
+.contacts {  
+  margin-right: 70px;   
 }
 
 .contacts-info {

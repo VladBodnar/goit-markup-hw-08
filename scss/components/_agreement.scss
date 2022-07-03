@@ -9,14 +9,20 @@
 .modal-form__policy-desc {
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;  
+    @include mg(desktop) {
+      font-size: 14px;
+    }
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
 .modal-form__policy-link {
-  font-size: 14px;
+  font-size: 12px;
+  @include mg(desktop) {
+    font-size: 14px;
+  }
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;

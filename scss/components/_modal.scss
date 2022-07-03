@@ -16,7 +16,10 @@
 
 .modal-wrapper {
   position: absolute;
-  width: 530px;
+  width: 450px;
+  @include mg(desktop) {
+    width: 530px;
+  }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
