@@ -1,6 +1,8 @@
 .contakts {
-  display: none;    
-  
+  display: none; 
+      @include mg(tablet) {
+          display: block;
+        }
     @include mg(desktop) {
       display: flex;
     }

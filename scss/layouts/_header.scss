@@ -8,14 +8,21 @@ header {
   align-items: center;
 }
 
+
+
 .menu-button {
-  
-  margin-left: 10px;
-  display: inline-flex;
-  margin: 0;
+  position: absolute;
+  z-index: 20;
+  right: 30px;
+  display: flex;
+ 
   padding: 0;
   border: none;
   background-color: transparent;
+  // &.is-open {
+  //   position: absolute;
+  //     z-index: 20;
+  // }
 }
 
 .menu-button .icon-cross {

@@ -1,3 +1,14 @@
+.navigation {
+  display: none;
+
+
+  @include mg(tablet)  {
+    display: flex;
+  }
+  @include mg(desktop) {
+    display: flex;
+  }
+}
 .navigation__list {
   display: flex;
   align-items: center;

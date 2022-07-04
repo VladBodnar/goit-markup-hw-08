@@ -48,48 +48,57 @@
           </ul>
         </nav>
 
-        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+        <button type="button" 
+        class="menu-button" 
+        aria-expanded="true"        
+        data-menu-button>
           <svg width="20" height="20"
           aria-label="мобильное меню">
             <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
             <use class="icon-cross" href="./images/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
-        <div class="mobile-menu" >
-          <ul class="list mobile-menu_nav">
-            <li class="mobile-menu_nav-item">
-              <a class="link mobile-menu_nav-link--activ" href="./index.html">Студия</a>
-            </li>
-            <li class="mobile-menu_nav-item">
-              <a class="link mobile-menu_nav-link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="mobile-menu_nav-item">
-              <a class="link mobile-menu_nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <ul class="list  mobile-menu_contacts">
-            <li class="mobile-menu_contacts-item">
-              <a class="link mobile-menu_contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="mobile-menu_contacts-item">
-              <a class="link mobile-menu_contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
-          <ul class="list  mobile-menu_socials">
-            <li class="mobile-menu_socials-item">
-              <a class="link mobile-menu_socials-link" href="#">Instagram</a>
-            </li>
-            <li class="mobile-menu_socials-item">
-              <a class="link mobile-menu_socials-link" href="#">Twitter</a>
-            </li>
-            <li class="mobile-menu_socials-item">
-              <a class="link mobile-menu_socials-link" href="#">Facebook</a>
-            </li>
-            <li class="mobile-menu_socials-item">
-              <a class="link mobile-menu_socials-link" href="#">LinkedIn</a>
-            </li>
-          </ul>
+
+        <div class="mobile-menu " data-menu >
+          <div class=" menu-wrappwer"          
+            >
+           
+            <ul class="list mobile-menu_nav">
+              <li class="mobile-menu_nav-item">
+                <a class="link mobile-menu_nav-link--activ" href="./index.html">Студия</a>
+              </li>
+              <li class="mobile-menu_nav-item">
+                <a class="link mobile-menu_nav-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-menu_nav-item">
+                <a class="link mobile-menu_nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="list  mobile-menu_contacts">
+              <li class="mobile-menu_contacts-item">
+                <a class="link mobile-menu_contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="mobile-menu_contacts-item">
+                <a class="link mobile-menu_contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+            <ul class="list  mobile-menu_socials">
+              <li class="mobile-menu_socials-item">
+                <a class="link mobile-menu_socials-link" href="#">Instagram</a>
+              </li>
+              <li class="mobile-menu_socials-item">
+                <a class="link mobile-menu_socials-link" href="#">Twitter</a>
+              </li>
+              <li class="mobile-menu_socials-item">
+                <a class="link mobile-menu_socials-link" href="#">Facebook</a>
+              </li>
+              <li class="mobile-menu_socials-item">
+                <a class="link mobile-menu_socials-link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        
 
         <!-- <ul class="list contakts">
           <li class="contakts__item">
@@ -112,9 +121,9 @@
       </div> 
     </header>
     
-    <!-- <main>
+     <main>
       <!--Герой-->
-       <!-- <section class="hero-group">
+        <section class="hero-group">
         <div class="container hero">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn" type="button" data-modal-open>
@@ -180,7 +189,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!--Преимущества-->
        <!-- <section class="section benefits"> 
         <div class="container benefits-container">
