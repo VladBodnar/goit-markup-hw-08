@@ -281,12 +281,19 @@ img {
   }
 }
 
-.contakts__item {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .contakts__item {
+    margin: 0;
+  }
 }
 
-.contakts__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .contakts__item {
+    margin-right: 50px;
+  }
+  .contakts__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .contakts__link {
@@ -296,13 +303,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 5px;
   font-weight: 500;
   line-height: 1.14;
   color: var(--main-txt-cl);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .contakts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contakts__link:hover {
@@ -365,7 +378,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 30;
 }
 
 .backdrop.is-hidden {
@@ -385,7 +398,7 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  z-index: 10;
+  z-index: 30;
   padding: 40px;
 }
 
@@ -716,15 +729,29 @@ header {
 }
 
 .menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    top: 10;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.menu-button.is-open {
   position: absolute;
-  z-index: 20;
-  right: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+  z-index: 40;
+  top: 10;
+  right: 15px;
 }
 
 .menu-button .icon-cross {
@@ -1402,7 +1429,7 @@ header {
   height: 100%;
   padding: 40px;
   background-color: #eedcdc;
-  z-index: 9;
+  z-index: 10;
 }
 
 .mobile-menu.is-open {
@@ -1415,6 +1442,18 @@ header {
           flex-direction: column;
   position: absolute;
   z-index: 10;
+}
+
+.menu-wrappwer {
+  position: relative;
+}
+
+.mobile-menu.is-open .menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 30;
 }
 
 .mobile-menu_contacts {

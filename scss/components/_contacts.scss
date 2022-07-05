@@ -2,28 +2,43 @@
   display: none; 
       @include mg(tablet) {
           display: block;
+         
+
         }
     @include mg(desktop) {
+      
       display: flex;
     }
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
 }
 
 .contakts__item {
-  margin-right: 50px;
+  @include mg(tablet) {
+   margin: 0;
 
-  &:last-child {
-    margin-right: 0;
   }
+
+  @include mg(desktop) {
+    margin-right: 50px;
+    
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+  
 }
 
 .contakts__link {
   display: flex;
   align-items: center;
+  padding: 5px;
+  @include mg(desktop) {
   padding-top: 32px;
-  padding-bottom: 32px;
+    padding-bottom: 32px;
+  }
+  
   font-weight: 500;
   line-height: 1.14;
   color: var(--main-txt-cl);

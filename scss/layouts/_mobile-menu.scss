@@ -9,16 +9,13 @@
     height: 100%;
     padding: 40px;
     background-color: rgb(238, 220, 220);
-        z-index: 9;
+        z-index: 10;
 
 
         // opacity: 0;
         // visibility: hidden;
         // pointer-events: none;
     
-
-
-
     
   &.is-open {
     display: flex;
@@ -28,9 +25,15 @@
 
   }
 }
-// .mobile-menu.is-open {
-//     display: block;
-// }
+ .menu-wrappwer {
+  position: relative;
+ }
+.mobile-menu.is-open .menu-button {
+  display: flex;
+    
+    position: absolute;
+    z-index: 30;
+}
 
 // }
 .mobile-menu_contacts {
