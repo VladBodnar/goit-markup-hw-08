@@ -1427,9 +1427,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px;
-  background-color: #eedcdc;
-  z-index: 10;
+  background-color: var(--header-bg-cl);
 }
 
 .mobile-menu.is-open {
@@ -1444,10 +1442,6 @@ header {
   z-index: 10;
 }
 
-.menu-wrappwer {
-  position: relative;
-}
-
 .mobile-menu.is-open .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1456,13 +1450,84 @@ header {
   z-index: 30;
 }
 
+.menu-wrappwer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
 .mobile-menu_contacts {
   margin-top: auto;
 }
 
-.mobile-menu_nav-link,
-.mobile-menu_contacts-link {
-  -webkit-text-emphasis-color: black;
-          text-emphasis-color: black;
+.mobile-menu_nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-menu_nav-link--activ {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile-menu_contacts-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mobile-menu_contacts-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-menu_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-menu_socials-item {
+  padding-right: 12px;
+}
+
+.mobile-menu_socials-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 18px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu_socials-link {
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 /*# sourceMappingURL=main.css.map */
