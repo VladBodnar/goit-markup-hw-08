@@ -1,16 +1,22 @@
 
 .mobile-menu {
-    display: none;  
-     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;  
-    background-color: var(--header-bg-cl);        
+    display: none; 
+    transition: display 10s cubic-bezier(0.4,
+      0,
+      0.2,
+      1); 
+         
   &.is-open {
     display: flex;
     flex-direction: column;
     position: absolute;
+    padding: 40px;
     z-index: 10;
+    top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--header-bg-cl);
   }
   &.is-open .menu-button {
       display: flex;  
@@ -18,26 +24,23 @@
       z-index: 30;
     }
 }
- .menu-wrappwer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
- }
 
 
+.mobile-menu_nav-item {
+  margin-bottom: 32px;
+}
 
 .mobile-menu_contacts {
    margin-top: auto;
+   margin-bottom: 32px;
+   &-item {
+    margin-bottom: 32px;
+   }
 }
 
 
 
-.mobile-menu_nav-link {
+.mobile-menu_nav-link { 
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
@@ -56,11 +59,10 @@
 }
  
 
-.mobile-menu_contacts-tel {
+.mobile-menu_contacts-tel { 
 font-weight: 500;
   font-size: 34px;
   line-height: 1.175; 
-
   letter-spacing: 0.02em;
 
   color: #2196F3;
@@ -80,32 +82,26 @@ font-weight: 500;
 }
 
 .mobile-menu_socials-item  {
-  // margin-left: 10px;
-  // margin-right: 10px;
-  padding-right: 12px;
-  
-&::before {    
-   position: absolute;
+  position: relative;
+  padding-right: 20px;
+&:not(:last-child)::after  {
+    position: absolute;
     content: "";
-    display: block;
-    // width: 4px;
+    display: flex;
+    right: 9px; 
+    bottom: 5px;
+    width: 2px;  
     height: 18px;
-
-    // background-color: #2196f3;
-    // border-radius: 2px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-      // transform: rotate(90deg);
+ 
+    border: 1px solid rgba(33, 33, 33, 0.2);  
   }
 }
 
-.mobile-menu_socials-link {
-  padding-left: 12px;
+.mobile-menu_socials-link {  
   font-weight: 500;
     font-size: 18px;
     line-height: 1.22px;     
-    letter-spacing: 0.02em;
-  
+    letter-spacing: 0.02em;  
     color: #2196F3;
    
 }

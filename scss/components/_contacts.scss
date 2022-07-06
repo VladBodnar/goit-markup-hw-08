@@ -34,9 +34,11 @@
   display: flex;
   align-items: center;
   padding: 5px;
+  font-size: 12px;
   @include mg(desktop) {
   padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
   }
   
   font-weight: 500;
@@ -50,8 +52,31 @@
 }
 
 .contakts__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  &-mail {
+    margin-right: 8px;
+      fill: currentColor;
+      width: 14px;
+      height: 10px;
+      @include mg(desktop) {
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+      }
+  }
+
+  &-tel {
+      margin-right: 8px;
+      fill: currentColor;
+      width: 10px;
+      height: 14px;  
+      @include mg(desktop) {
+        margin-right: 10px;
+        width: 10px;
+        height: 16px;
+      }
+    }
+  
+
 }
 
 .contacts {  
