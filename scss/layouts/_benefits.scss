@@ -3,10 +3,8 @@
   padding-bottom: 94px;
 }
 
-.benefits__title.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.benefits__title {
+display: none;
 }
 
 .benefits-list {
@@ -14,16 +12,6 @@
   flex-wrap: wrap;
   margin: -15px;
   
-  // display: block;
-  // margin: -15px;
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  // }
 }
 
 .benefits__item {

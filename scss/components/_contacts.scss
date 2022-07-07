@@ -79,24 +79,37 @@
 
 }
 
-.contacts {  
-  margin-right: 70px;   
+.contacts {    
+  text-align: center;
+  justify-content: center;  
+  margin-bottom: 60px;
+
+@include mg(tablet) {
+  margin-left: 0;
+  margin-right: 165px;
+}
+  @include mg(desktop) {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }  
 }
 
 .contacts-info {
-  margin-top: 20px;
+  margin-top: 20px;  
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  
 }
 
 .contacts-info__location {
+  
   margin-bottom: 9px;
   color: var(--secondary-txt-cl);
 }
 
 .contacts-info__item {
-  margin-bottom: 9px;
+  margin-bottom: 9px;   
 
   &:last-child {
     margin-bottom: 0;

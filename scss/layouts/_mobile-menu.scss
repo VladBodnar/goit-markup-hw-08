@@ -8,6 +8,7 @@
          
   &.is-open {
     display: flex;
+    overflow-y: scroll;
     flex-direction: column;
     position: absolute;
     padding: 40px;

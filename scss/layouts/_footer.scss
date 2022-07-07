@@ -1,10 +1,24 @@
 .footer {
+  
+  background-color: var(--dark-bg-cl);  
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--dark-bg-cl);
+  
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
-}
+  display: block;
+  justify-content: center;  
+
+  @include mg(tablet-only) {
+    display: flex;
+      flex-wrap: wrap;
+     
+  }
+
+  @include mg(desktop) {
+    display: flex;
+   
+  }
+     align-items: baseline;
+ }

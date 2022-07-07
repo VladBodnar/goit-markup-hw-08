@@ -36,7 +36,17 @@
 
 .connection {
   display: block;
+  text-align: center;
+  justify-items: center;
+  margin-bottom: 60px;
+  @include mg(tablet)  {
+    margin-right: 0;
+  }
+  @include mg(desktop) {
+    margin-bottom: 0;
   margin-right: 100px;
+  }
+  
 }
 
 .connection__name {
@@ -51,6 +61,7 @@
 
 .connection__list {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -70,7 +81,7 @@
   }
 }
 
-.connection__item:not(:last-child) {
+.connection__item:not(:last-child) {  
   margin-right: 10px;
 }
 
