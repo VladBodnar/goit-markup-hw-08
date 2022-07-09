@@ -1,6 +1,11 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+    padding-bottom: 30px;
+  @include mg(desktop) {
+    padding-top: 94px;
+      padding-bottom: 64px;
+  }
+
 }
 
 .portfolio-filter__list {
@@ -10,12 +15,16 @@
   align-items: center;
   justify-content: center;
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  @include mg(desktop) {
+    margin-bottom: 30px;
+  }
   padding: 0;
 }
 
 .portfolio-filter__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-right: 0;
@@ -28,8 +37,7 @@
   
     @include mg(tablet) {
       display: flex;
-      flex-wrap: wrap;
-  
+      flex-wrap: wrap;  
     }
   
     @include mg(desktop) {
@@ -42,8 +50,9 @@
 }
 
 .portfolio-page__item {
-margin: 15px;
-  flex-basis: (100%);
+margin: 0px 15px 30px 15px ;
+justify-content: center;
+align-content: center;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) /2);
@@ -81,7 +90,7 @@ margin: 15px;
 .portfolio-page__name {
   margin-bottom: 4px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-cl);

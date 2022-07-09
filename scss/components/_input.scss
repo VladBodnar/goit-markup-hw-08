@@ -56,7 +56,7 @@
   text-align: center;
  
   @include mg(desktop) {
- 
+   text-align: left;
   margin-right: 0;
   }
   
@@ -93,8 +93,8 @@
   
   @include mg(desktop) {
     margin-bottom: 0;
-  width: 360px;
-    margin-right: 15px;
+  width: 358px;
+    margin-right: 12px;
 
   }
     

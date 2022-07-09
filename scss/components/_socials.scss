@@ -37,14 +37,15 @@
 .connection {
   display: block;
   text-align: center;
-  justify-items: center;
+  // justify-items: center;
   margin-bottom: 60px;
   @include mg(tablet)  {
     margin-right: 0;
   }
   @include mg(desktop) {
+    text-align: left;
     margin-bottom: 0;
-  margin-right: 100px;
+  margin-right: 93px;
   }
   
 }
